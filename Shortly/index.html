@@ -1,179 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="main.css">
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
-  
-<!-- Navbar -->
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
 
-<!-- panner -->
-<nav class="container">
-  <div class="logo">
-    <img src="./images/logo.svg" alt="" srcset="">
-  </div>
-  <div class="menu-burger">
-    <i class="fa fa-bars" aria-hidden="true"></i>
-  </div>
-  <div class="nav-links">
-    <ul class="nav-list">
-      <li>
-        Features
-      </li>
-      <li>
-        Pricing
-      </li>
-      <li>
-        Resources
-      </li>
-    </ul>
-    <ul class="sign-login">
-      <li>
-        Login
-      </li>
-      <li class="aqua">
-        Sign Up
-      </li>
-    </ul>
-  </div>
-</nav>
-<section class="panner container">
-  <div class="panner-img">
-    <img src="/images/illustration-working.svg" alt="">
-  </div>
-  <div class="panner-desc">
-    <h1>
-      More than just shorter links
-    </h1>
-    <p>      
-        Build your brand’s recognition and get detailed insights 
-        on how your links are performing.
-    </p>
+    <!-- panner -->
+    <nav class="container">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="" srcset="" />
+      </div>
+      <div class="menu-burger">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div class="nav-links">
+        <ul class="nav-list">
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Resources</li>
+        </ul>
+        <ul class="sign-login">
+          <li>Login</li>
+          <li class="aqua">Sign Up</li>
+        </ul>
+      </div>
+    </nav>
+    <section class="panner container">
+      <div class="panner-hero">
+        <div class="panner-img">
+          <img src="./images/illustration-working.svg" alt="" />
+        </div>
+        <div class="panner-desc">
+          <h1>More than just shorter links</h1>
+          <p>
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </p>
 
-  <button class="started aqua">
-    Get Started
-  </button>
-  </div>
-  <form >
-    <input type="text" placeholder="Shorten a link here...">
-    <button >Shorten It!</button>
-  </form>
-</section>
-<section class="advanced container">
-  <div class="advanced-desc">
-    <h3>Advanced Statistics</h3>
-    <p>Track how your links are performing across the web with our 
-      advanced statistics dashboard.</p>
-  </div>
-  <div class="cards">
+          <button class="started aqua">Get Started</button>
+        </div>
+      </div>
+      <form>
+        <input
+          class="shorten-input"
+          type="text"
+          placeholder="Shorten a link here..."
+        />
+        <button class="shorten-btn">Shorten It!</button>
+      </form>
+    </section>
+    <section class="advanced container">
+      <div class="shorted-links"></div>
+      <div class="advanced-desc">
+        <h3>Advanced Statistics</h3>
+        <p>
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">
+            <img src="./images/icon-brand-recognition.svg" alt="" />
+          </div>
+          <h4>Brand Recognition</h4>
+          <p>
+            Boost your brand recognition with each click. Generic links don’t
+            mean a thing. Branded links help instil confidence in your content.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./images/icon-detailed-records.svg" alt="" />
+          </div>
+          <h4>Detailed Records</h4>
+          <p>
+            Gain insights into who is clicking your links. Knowing when and
+            where people engage with your content helps inform better decisions.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./images/icon-fully-customizable.svg" alt="" />
+          </div>
+          <h4>Fully Customizable</h4>
+          <p>
+            Improve brand awareness and content discoverability through
+            customizable links, supercharging audience engagement.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="boost container">
+      <h3>Boost your links today</h3>
+      <button class="aqua">Get Started</button>
+    </section>
+    <footer>
+      <div class="logo">
+        <img src="./images/logo2.svg" alt="" class="footer-img" />
+      </div>
+      <div class="footer-navs">
+        <ul>
+          <li class="head">features</li>
+          <li class="head">resources</li>
+          <li class="head">company</li>
 
-  
-  <div class="card">
-    <div class="card-img">
-      <img src="./images/icon-brand-recognition.svg" alt="">
+          <li>link shortening</li>
+          <li>blog</li>
+          <li>about</li>
+
+          <li>branded links</li>
+          <li>developers</li>
+          <li>our team</li>
+
+          <li>analytic</li>
+          <li>support</li>
+          <li>careers</li>
+          <li>contact</li>
+        </ul>
+      </div>
+      <div class="social-icons">
+        <img src="./images/icon-facebook.svg" alt="" />
+        <img src="./images/icon-twitter.svg" alt="" />
+        <img src="./images/icon-pinterest.svg" alt="" />
+        <img src="./images/icon-instagram.svg" alt="" />
+      </div>
+    </footer>
+    <div style="background: rgb(58, 55, 55); color: #fff;" class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Abdallah Shabaan</a>.
     </div>
-    <h4>
-      Brand Recognition
-    </h4>
-    <p>
-      Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content.
-    </p>
-  </div>
-  <div class="card">
 
-    <div class="card-img">
-
-      <img src="./images/icon-detailed-records.svg" alt="">
-    </div>
-    <h4>Detailed Records</h4>
-    <p>
-      Gain insights into who is clicking your links. Knowing when and where 
-      people engage with your content helps inform better decisions.
-    </p>
-  </div>
-  <div class="card">
-    <div class="card-img">
-      <img src="./images/icon-fully-customizable.svg" alt="">
-    </div>
-    <h4>Fully Customizable</h4>
-    <p>
-      Improve brand awareness and content discoverability through customizable 
-      links, supercharging audience engagement.</p>
-  </div>
-</div>
-</section>
-<section class="boost container">
-  <h3>Boost your links today</h3>
-  <button class="aqua">Get Started</button>
-</section>
-<footer>
-  <div class="logo">
-    <img src="./images/logo.svg" alt="" class="footer-img">
-  </div>
-  <div class="footer-navs">
-    <ul>
-      Features
-      <li>
-        Link Shortening
-      </li>
-      <li>
-        Branded Links
-      </li>
-      <li>
-        Analytics
-      </li>
-      Resources
-      <li>
-        Blog
-        <li>
-          Developers
-        </li>
-      </li>
-      <li>
-        Support
-      </li>
-      Company
-      <li>
-        About
-      </li>
-      <li>
-        Our Team
-      </li>
-      <li>
-        Careers
-      </li>
-      <li>Contact</li>
-    </ul>
-  </div>
-  <div class="social-icons">
-    <img src="./images/icon-facebook.svg" alt="">
-    <img src="./images/icon-twitter.svg" alt="">
-    <img src="./images/icon-pinterest.svg" alt="">
-    <img src="./images/icon-instagram.svg" alt="">
-  </div>
-</footer>
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
