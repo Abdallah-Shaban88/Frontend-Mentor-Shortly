@@ -492,7 +492,7 @@ footer > *{
         margin-top: 30%;
     }
     .card h4{
-        font-size: calc(.5rem + 5vw);
+        font-size: calc(.5rem + 2.5vw);
     }
     .card p{
         font-size: calc(.01rem + 3.55vw);
