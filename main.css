@@ -405,7 +405,7 @@ footer > *{
     .panner-desc p {
         width: 100%;
         text-align: center;
-        font-size: calc(.1rem + 4.15vw);
+        font-size: calc(.01rem + 3.55vw);
         font-weight: 500;
     }
      .aqua{
@@ -465,7 +465,7 @@ footer > *{
      }
      .advanced-desc p{
          width: 100%;
-         font-size: calc(.1rem + 3.9vw);
+         font-size: calc(.01rem + 3.55vw);
          line-height: 1.7;
          color: hsl(0, 1%, 54%);
      }
@@ -495,7 +495,7 @@ footer > *{
         font-size: calc(.5rem + 5vw);
     }
     .card p{
-        font-size: calc(.1rem + 3.9vw);
+        font-size: calc(.01rem + 3.55vw);
         padding: .5rem;
     }
     .boost{
